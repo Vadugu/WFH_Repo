@@ -94,8 +94,8 @@ namespace KeePassTestSuite.Recordings
             Validate.AttributeEqual(repo.MainForm.EntryInfo, "Text", varTitle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
+            Delay.Duration(10000, false);
             
         }
 

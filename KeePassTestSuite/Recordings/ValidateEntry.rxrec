@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+embeddedrepository="False"
 id="22e7bc49-a08f-4ed4-9426-9dbb96022fbf"
 mode="Global"
 rxversion="9.0">
-	<name>
-		ValidateEntry
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -38,7 +35,8 @@ rxversion="9.0">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="2cc4759a-40ca-4708-b9cc-3c312a834327">
+		searchpropertyid="2cc4759a-40ca-4708-b9cc-3c312a834327"
+		similarity="1">
 			<comment>
 			</comment>
 			<bindings>
@@ -53,6 +51,8 @@ rxversion="9.0">
 				<path>
 					/form[@controlname='MainForm']/container[@controlname='m_splitHorizontal']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container/container[@caption='' and @controltypename='SplitterPanel' and @instance='1']/table/row/cell[@text=$vartitle]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text
@@ -62,7 +62,7 @@ rxversion="9.0">
 			</matchvalue>
 		</validationitem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="10000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -75,7 +75,7 @@ rxversion="9.0">
 	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
 	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	rxversion="9.0">
 		<codegen
 		classname="KeePassTestSuiteRepository"
 		namespace="KeePassTestSuite">
